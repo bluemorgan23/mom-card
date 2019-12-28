@@ -1,0 +1,266 @@
+<div style="width: 100%; display: flex; align-items: center; justify-content: center; flex-direction: column">
+        <mat-card class="noteContainer">
+          <mat-card-header>
+            <div mat-card-avatar class="example-header-image"></div>
+            <mat-card-title>Christmas Card</mat-card-title>
+            <mat-card-subtitle>Thank you so much, Mom!</mat-card-subtitle>
+          </mat-card-header>
+          <mat-card-content>
+            <h3 style="line-height: 1.7em;
+              text-shadow: 0.5px 0.5px #000000;">
+              Merry Christmas! I wanted to give you something special and unique for Christmas this year, so I decided to
+              give you YOUR VERY OWN CHRISTMAS WEBSITE!!! HOW EXCITING?! I figured this would be one of those thoughtful
+              gifts that you've always really cherished. I want you to know that your dedication to our family does not go
+              unnoticed. I've gone around social media and collected a handful of photos that show some things that I love
+              most about you. First of all, you've always been there to support all of us in each of our accomplishments.
+              Whether it was having a birthday party, graduating, winning (or losing) a game, you were always there! Even
+              when I was little, and you were working your tail off as a nurse, you never missed a single beat. I know that
+              wasn't easy and that you probably wanted to give up sometimes, but you didn't. You achieved your goals, and
+              you've made it possible for me to achieve mine. You're also making that possible for Cannon and Campbell.
+            </h3>
+            <br />
+            <h3 style="line-height: 1.7em;
+              text-shadow: 0.5px 0.5px #000000;">
+              You've always done your absolute best to make sure we have what we need and more. I've been thinking about all
+              of the effort you've put in over the years for things like halloween costumes, education, elf on a shelf,
+              extra-curricular activies like girl scouts, and more. You are so imaginative and creative, and I love that
+              about you! I literally told someone that my most favorite halloween costume ever was when I was the Wright
+              Brothers. What an incredible costume! You're still crushing it with the kids' costumes, and you and Stacey's
+              costumes are always incredible. The elf-on-a-shelf series that you have been doing over the years has been
+              INSANELY GOOD! I mean that should be going viral, no joke! You've always made sure that we have exciting and
+              beatifully arranged birthday parties. I will always cherish those birthday memories, such as the pirate
+              treasure hunt, the shark theme, and the dance party at the agricenter. You made this all possible!
+            </h3>
+            <br />
+            <h3 style="line-height: 1.7em;
+              text-shadow: 0.5px 0.5px #000000;">
+              Another thing I like to point out is your tendency to be charitable. You do so many things like being a part
+              of Junior Auxiliary, Girl Scouts, PTA, and more. Its truly astounding how you find time to do all of this, and
+              sometimes it makes me worried that you are doing to much. However, you always seem to find time and hold
+              everything together. I know that is hard, just like it was when you were working on-call as a nurse. You never
+              give up. You never have, and you never will stop fighting for us. You are the best mom I could've ever asked
+              for. I love you very much, and MERRY CHRISTMAS!!
+            </h3>
+          </mat-card-content>
+        </mat-card>
+        <mat-card class="carouselContainer">
+            <mat-card-header >
+                <div mat-card-avatar class="example-header-image"></div>
+                <mat-card-title>Family Photos</mat-card-title>
+                <mat-card-subtitle>Here are some fun photos!</mat-card-subtitle>
+              </mat-card-header>
+             <div class="slidesContainer">
+                <app-carousel [autoPlayDuration]="5000" animation="slide" [isNavigationVisible]="true" [isThumbnailsVisible]="false" [slides]="slides"
+                [slideTemplateRef]="slide" [thumbnailTemplateRef]="thumbnail"></app-carousel>
+                <ng-template #slide let-slide>
+                  <div [ngStyle]="{
+                      'background-size': 'cover',
+                      'background-image': 'url(' + slide.url + ')',
+                      'background-repeat': 'no-repeat',
+                      'width': '100%',
+                      'height': '100%'
+                    }">
+                  </div>
+                </ng-template>
+                <ng-template #thumbnail let-slide>
+                    <div [ngStyle]="{
+                        'background-size': 'cover',
+                        'background-image': 'url(' + slide.url + ')',
+                        'background-repeat': 'no-repeat',
+                        'background-position': 'center center',
+                        'width': '100%',
+                        'height': '100%'
+                      }"></div> 
+                </ng-template> 
+             </div>
+          
+        </mat-card>
+      </div>
+    
+      <mat-grid-list cols="2" rowHeight="600px" style="width: 90%;">
+        <mat-grid-tile>
+          <mat-card class="example-card">
+            <mat-card-header>
+              <div mat-card-avatar class="example-header-image"></div>
+              <mat-card-title>Dixie Doodle!</mat-card-title>
+              <mat-card-subtitle>Bringing the Christmas Cheer</mat-card-subtitle>
+            </mat-card-header>
+            <img mat-card-image src="../assets/MomPhotos/DixieChristmasNeck.jpg" alt="Dixie">
+            <mat-card-content>
+              <p>
+                You're also a pretty incredible dog mom!
+              </p>
+            </mat-card-content>
+          </mat-card>
+        </mat-grid-tile>
+        <mat-grid-tile>
+          <mat-card class="example-card">
+            <mat-card-header>
+              <div mat-card-avatar class="example-header-image"></div>
+              <mat-card-title>Dixers!!</mat-card-title>
+              <mat-card-subtitle>Sporting a killer beard and her favorite sweater </mat-card-subtitle>
+            </mat-card-header>
+            <img mat-card-image src="../assets/MomPhotos/DixieChristmas.jpg" alt="Dixie">
+            <mat-card-content>
+              <p>
+                Dixie has brought our family joy for 12 years with many more to come :)
+              </p>
+            </mat-card-content>
+          </mat-card>
+        </mat-grid-tile>
+        <mat-grid-tile>
+          <mat-card class="example-card">
+            <mat-card-header>
+              <div mat-card-avatar class="example-header-image"></div>
+              <mat-card-title>The Elves are back!</mat-card-title>
+              <mat-card-subtitle>Reaching terminal velocity on these sleds!</mat-card-subtitle>
+            </mat-card-header>
+            <img mat-card-image src="../assets/MomPhotos/ElvesSledding.jpg" alt="Elves sledding">
+            <mat-card-content>
+              <p>
+                Elves have many hobbies! They enjoy skiing, sledding, tubing, and even rock climbing!
+              </p>
+            </mat-card-content>
+          </mat-card>
+        </mat-grid-tile>
+        <mat-grid-tile>
+          <mat-card class="example-card">
+            <mat-card-header style="height: 70px">
+              <div mat-card-avatar style="margin-top: 12px;" class="example-header-image"></div>
+              <mat-card-title style="padding-top: 5px;">The Elusive Climber Elves</mat-card-title>
+              <mat-card-subtitle>Making a dangerous maneuver on the gumdrop mountain wall</mat-card-subtitle>
+            </mat-card-header>
+            <img mat-card-image style="height: 390px" src="../assets/MomPhotos/ElvesClimbing.jpg">
+            <mat-card-content style="margin-bottom: 20px;">
+              <p>
+                Many people don't know this... but the elves make an annual pilgrimage to the dangerous Candy Mountain.
+                Candy Mountain is 30 miles west of the North Pole, but the dangerous trip is worth every step! The elves
+                must climb the treacherous gumdrop mountain face in order to reach all of the delicious candies that Santa
+                delivers to all to good boys and girls!
+              </p>
+            </mat-card-content>
+          </mat-card>
+        </mat-grid-tile>
+        <mat-grid-tile>
+            <mat-card class="example-card">
+              <mat-card-header >
+                <div mat-card-avatar class="example-header-image"></div>
+                <mat-card-title>Good Times With Friends!</mat-card-title>
+                <mat-card-subtitle>You are loved!</mat-card-subtitle>
+              </mat-card-header>
+              <img mat-card-image  src="../assets/MomPhotos/FriendsMomStacey.jpg" alt="Dixie">
+              <mat-card-content>
+                <p>
+                  A trip back to Colorado sounds nice!
+                </p>
+              </mat-card-content>
+            </mat-card>
+          </mat-grid-tile>
+            
+              <mat-grid-tile>
+              <mat-card class="example-card">
+                <mat-card-header >
+                  <div mat-card-avatar class="example-header-image"></div>
+                  <mat-card-title>Sisters :)</mat-card-title>
+                  <mat-card-subtitle>Glamour Shots!!!</mat-card-subtitle>
+                </mat-card-header>
+                <img mat-card-image  src="../assets/MomPhotos/MomChelsea.jpg" alt="Dixie">
+                <mat-card-content>
+                  <p>
+                    I love this photo of you two!
+                  </p>
+                </mat-card-content>
+              </mat-card>
+            </mat-grid-tile>
+            <mat-grid-tile>
+                <mat-card class="example-card">
+                  <mat-card-header >
+                    <div mat-card-avatar class="example-header-image"></div>
+                    <mat-card-title>Dixie Roaming the Pyramids!</mat-card-title>
+                    <mat-card-subtitle>Hunting Lizards and other Desert Creatures</mat-card-subtitle>
+                  </mat-card-header>
+                  <img mat-card-image  src="../assets/MomPhotos/DixiePyramid.jpg" alt="Dixie">
+                  <mat-card-content>
+                    <p>
+                      A small, agile dog that copes very well with mountainous terrain, Schnorkies was originally
+                      bred for hunting.
+                    </p>
+                  </mat-card-content>
+                </mat-card>
+              </mat-grid-tile>
+            <mat-grid-tile>
+                <mat-card class="example-card">
+                  <mat-card-header >
+                    <div mat-card-avatar class="example-header-image"></div>
+                    <mat-card-title>Go Campbell!</mat-card-title>
+                    <mat-card-subtitle>The Brown's Showing Campbell Support!</mat-card-subtitle>
+                  </mat-card-header>
+                  <img mat-card-image  src="../assets/MomPhotos/BrownsCampbell.jpg" alt="Dixie">
+                  <mat-card-content>
+                    <p>
+                      You make sure that we have fantastic memories and are supported through everything in life!
+                    </p>
+                  </mat-card-content>
+                </mat-card>
+              </mat-grid-tile>
+              <mat-grid-tile>
+                  <mat-card class="example-card">
+                    <mat-card-header >
+                      <div mat-card-avatar class="example-header-image"></div>
+                      <mat-card-title>Matthew's Graduation!</mat-card-title>
+                      <mat-card-subtitle>You're everywhere!!</mat-card-subtitle>
+                    </mat-card-header>
+                    <img mat-card-image  src="../assets/MomPhotos/MatthewGrad.jpg" alt="Dixie">
+                    <mat-card-content>
+                      <p>
+                        You care so much about the family, you don't miss a thing!
+                      </p>
+                    </mat-card-content>
+                  </mat-card>
+                </mat-grid-tile>
+                <mat-grid-tile>
+                    <mat-card class="example-card">
+                      <mat-card-header >
+                        <div mat-card-avatar class="example-header-image"></div>
+                        <mat-card-title>Cannon's Birthday</mat-card-title>
+                        <mat-card-subtitle>Urban Air</mat-card-subtitle>
+                      </mat-card-header>
+                      <img mat-card-image  src="../assets/MomPhotos/CannonBirthdayUrbanAir.jpg" alt="Dixie">
+                      <mat-card-content>
+                        <p>
+                          You make sure we have the most memorable and exciting birthday parties!
+                        </p>
+                      </mat-card-content>
+                    </mat-card>
+                  </mat-grid-tile>
+                <mat-grid-tile>
+                    <mat-card class="example-card">
+                      <mat-card-header >
+                        <div mat-card-avatar class="example-header-image"></div>
+                        <mat-card-title>Oof!!</mat-card-title>
+                        <mat-card-subtitle>Sometimes You Get Knocked Down</mat-card-subtitle>
+                      </mat-card-header>
+                      <img mat-card-image  src="../assets/MomPhotos/ChrisKnockedDownVintage.jpg" alt="Dixie">
+                      <mat-card-content>
+                        <p>
+                          But when you get knocked down... Just Remember -->
+                        </p>
+                      </mat-card-content>
+                    </mat-card>
+                  </mat-grid-tile>
+                  <mat-grid-tile>
+                      <mat-card class="example-card">
+                        <mat-card-header >
+                          <div mat-card-avatar class="example-header-image"></div>
+                          <mat-card-title>We Got Yo Back!</mat-card-title>
+                          <mat-card-subtitle>Like Chiroprac!</mat-card-subtitle>
+                        </mat-card-header>
+                        <img mat-card-image  src="../assets/MomPhotos/YouWillNeverFaceAnythingAlone.jpg" alt="Dixie">
+                        <mat-card-content>
+                          <p>
+                            Don't forget it, I will always be here for you!
+                          </p>
+                        </mat-card-content>
+                      </mat-card>
+                    </mat-grid-tile>
+      </mat-grid-list>

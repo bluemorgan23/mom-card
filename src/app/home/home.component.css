@@ -7,19 +7,11 @@ mat-grid-tile {
   }
   
   .example-header-image {
-    background-image: url('../assets/MomPhotos/babyYodaAvatar.jpg');
+    background-image: url('../../assets/MomPhotos/babyYodaAvatar.jpg');
     background-size: cover;
   }
 
-  .toolbar {
-      margin-bottom: 20px;
-  }
-
-.content {
-    margin-top: 1%;
-}
-
-.mat-grid-tile {
+  .mat-grid-tile {
     width: 400px;
 }
 
@@ -46,4 +38,5 @@ mat-grid-tile {
 .noteContainer {
     width: 80%;
     margin-bottom: 20px;
+    margin-top: 20px;
 }

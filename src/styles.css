@@ -1,1 +1,57 @@
 /* You can add global styles to this file, and also import other style files */
+/* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+body {
+    overflow-x: hidden !important;
+    background-color: #ddffaa;
+background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120' viewBox='0 0 120 120'%3E%3Cpolygon fill='%23AE9' points='120 120 60 120 90 90 120 60 120 0 120 0 60 60 0 0 0 60 30 90 60 120 120 120 '/%3E%3C/svg%3E");
+  background-repeat: repeat
+}
+
+a:visited {
+    color: black !important;
+    text-decoration: none;
+}
+
+mat-grid-tile {
+    margin: 50px;
+  }
+
+  .example-card {
+    max-width: 400px !important;
+  }
+  
+  .example-header-image {
+    background-image: url('./assets/MomPhotos/babyYodaAvatar.jpg');
+    background-size: cover;
+  }
+
+  .mat-grid-tile {
+    width: 400px;
+}
+
+.mat-card {
+    background: #ff4d4d !important;
+}
+
+h3 {
+    color: white;
+}
+
+.mat-card-header {
+    color: white;
+    font-weight: bolder;
+}
+
+p {
+    color: white;
+    font-weight: bold;
+}
+
+a {
+    font-size: 20px;
+    font-weight: bolder;
+}
